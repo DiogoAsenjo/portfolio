@@ -19,10 +19,23 @@ export class ProjectComponent {
       title: 'Controle de treinos',
       width: '100px',
       height: '51px',
-      description: 'Description',
+      description: ` <p>Projeto para manter o acomapnhamento de treinos, podendo criar, editar, excluir e ordenar os treinos por tempo, velocidade, etc'</P>
+
+      <h3>Tecnologias utilizadas</h3>
+
+      <ul>
+        <li>Front: React</li>
+        <li>Back: Node.js, NestJS, Typescript e Prisma</li>
+        <li>Deploy: Docker e AWS</li>
+      </ul>
+      `,
       links: [
         {
-          name: 'Conheça',
+          name: 'Repo front',
+          href: 'https:site',
+        },
+        {
+          name: 'Repo front',
           href: 'https:site',
         },
       ],
@@ -32,7 +45,6 @@ export class ProjectComponent {
   public openDialog(data: IProject) {
     this.dialog.open(DialogProjectComponent, {
       data,
-      panelClass: 'app-dialog-project',
     });
   }
 }

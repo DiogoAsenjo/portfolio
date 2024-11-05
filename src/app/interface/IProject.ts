@@ -5,10 +5,8 @@ export interface IProject {
   width: string;
   height: string;
   description: string;
-  links: [
-    {
-      name: string;
-      href: string;
-    }
-  ];
+  links: {
+    name: string;
+    href: string;
+  }[];
 }

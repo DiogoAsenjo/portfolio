@@ -14,11 +14,11 @@ export class ProjectComponent {
   readonly dialog = inject(MatDialog);
   public arrayProject = signal<IProject[]>([
     {
-      imgSrc: 'assets/projects/canoaCaicara.jpg',
+      imgSrc: 'assets/projects/canoa.svg',
       alt: 'Logo Canoa Caiçara',
       title: 'Controle de treinos',
       width: '100px',
-      height: '51px',
+      height: '100px',
       description: ` 
         <p>Projeto para manter o acomapanhamento de treinos de canoa havaiana, podendo criar, editar, excluir e ordenar os treinos por tempo, velocidade, etc</p>
       `,
@@ -40,6 +40,30 @@ export class ProjectComponent {
         {
           name: 'Repo back',
           href: 'https://github.com/DiogoAsenjo/desafio03-sistema-canoa',
+        },
+      ],
+    },
+    {
+      imgSrc: 'assets/projects/portfolio.svg',
+      alt: 'Logo Portfolio',
+      title: 'Portfolio',
+      width: '100px',
+      height: '100px',
+      description: ` 
+        <p>Portfolio para aprimorar os conhecimentos em Angulas, HTML e CSS e ter um site meu simples.</p>
+      `,
+      technologies: `
+          <p>Front: Angular</p>
+          <p>Deploy: GitHub Pages</p>
+      `,
+      links: [
+        {
+          name: 'Acesse aqui',
+          href: 'https://treinoscanoa.com.br/',
+        },
+        {
+          name: 'Repo front',
+          href: 'https://github.com/DiogoAsenjo/desafio03-sistema-canoa-react',
         },
       ],
     },

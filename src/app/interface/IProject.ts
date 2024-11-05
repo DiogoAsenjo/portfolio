@@ -5,6 +5,7 @@ export interface IProject {
   width: string;
   height: string;
   description: string;
+  technologies: string;
   links: {
     name: string;
     href: string;

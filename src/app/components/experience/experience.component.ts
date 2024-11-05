@@ -25,10 +25,11 @@ export class ExperienceComponent {
     },
     {
       summary: {
-        strong: 'Estágio | Mentoria',
+        strong: 'Mentoria',
         p: 'Creath Digital | Fevereiro 2023 - Setembro 2024',
       },
       text: `
+      <p>Mentoria onde realizava algumas atividades similares a de um estágio</p>
       <p>Realização de testes manuais para garantir que as aplicações funcionem conforme prometido.</p>
       <p>Participação ativa no Desing Sprint para viabilizar uma solução para o cliente.</p>
       <p>Acompanhamento de equipes de programação para entender na prática metodologias como Scrum e Kanban.</p>

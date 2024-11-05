@@ -19,24 +19,27 @@ export class ProjectComponent {
       title: 'Controle de treinos',
       width: '100px',
       height: '51px',
-      description: ` <p>Projeto para manter o acomapnhamento de treinos, podendo criar, editar, excluir e ordenar os treinos por tempo, velocidade, etc'</P>
-
-      <h3>Tecnologias utilizadas</h3>
-
-      <ul>
-        <li>Front: React</li>
-        <li>Back: Node.js, NestJS, Typescript e Prisma</li>
-        <li>Deploy: Docker e AWS</li>
-      </ul>
+      description: ` 
+        <p>Projeto para manter o acomapanhamento de treinos de canoa havaiana, podendo criar, editar, excluir e ordenar os treinos por tempo, velocidade, etc</p>
+      `,
+      technologies: `
+          <p>Front: React</p>
+          <p>Back: Node.js, NestJS, Typescript e Prisma</p>
+          <p>Deploy: Docker e AWS</p>
+          <p>Obs.: como meu free tier da AWS irá expirar em breve, é possível que o projeto não esteja mais acessível</p>
       `,
       links: [
         {
-          name: 'Repo front',
-          href: 'https:site',
+          name: 'Acesse aqui',
+          href: 'https://treinoscanoa.com.br/',
         },
         {
           name: 'Repo front',
-          href: 'https:site',
+          href: 'https://github.com/DiogoAsenjo/desafio03-sistema-canoa-react',
+        },
+        {
+          name: 'Repo back',
+          href: 'https://github.com/DiogoAsenjo/desafio03-sistema-canoa',
         },
       ],
     },

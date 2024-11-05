@@ -8,6 +8,8 @@
 <mat-dialog-content>
   <h3>Descrição</h3>
   <article [innerHTML]="getData()?.description"></article>
+  <h3>Tecnologias utilizadas</h3>
+  <article [innerHTML]="getData()?.technologies"></article>
   <nav>
     @for (item of getData()?.links; track $index) {
     <a [href]="item.href" target="_blank" class="btn btn-primary">

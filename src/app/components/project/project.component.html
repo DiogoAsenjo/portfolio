@@ -3,7 +3,7 @@
   <ul>
     @for (item of arrayProject(); track $index) {
     <li>
-      <button>
+      <button (click)="openDialog(item)">
         <img
           [src]="item.imgSrc"
           [alt]="item.alt"

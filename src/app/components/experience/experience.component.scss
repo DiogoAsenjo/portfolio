@@ -47,7 +47,7 @@
     &[open] {
       summary {
         &::after {
-          content: url("../../../../public/assets/icons/mail.svg");
+          content: url("../../../../public/assets/icons/up.svg");
           margin-top: 5px;
         }
 
@@ -58,7 +58,7 @@
     &:not([open]) {
       summary {
         &::after {
-          content: url("../../../../public/assets/icons/whatsapp.svg");
+          content: url("../../../../public/assets/icons/down.svg");
           margin-top: 5px;
         }
       }

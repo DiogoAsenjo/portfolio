@@ -59,11 +59,11 @@ export class ProjectComponent {
       links: [
         {
           name: 'Acesse aqui',
-          href: 'https://treinoscanoa.com.br/',
+          href: 'https://diogoasenjo.github.io/portfolio/',
         },
         {
           name: 'Repo front',
-          href: 'https://github.com/DiogoAsenjo/desafio03-sistema-canoa-react',
+          href: 'https://github.com/DiogoAsenjo/portfolio',
         },
       ],
     },

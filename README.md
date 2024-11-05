@@ -1,27 +1,30 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Projeto desenvolvido utilizando Angular 18.
 
-## Development server
+Criei esse portfolio com o objetivo de aprimorar meus conhecimentos em front-end ao mesmo tempo que tinha uma página minha com meus projetos, conquistas, etc.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto pode ser acessado através do link: https://diogoasenjo.github.io/portfolio/
 
-## Code scaffolding
+## Como rodar localmente?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Basta clonar o projeto, instalar todas as depedências com "npm i". Feito isso, basta dar o comando "ng serve" que o projeto irá rodar localmente em: http://localhost:4200/
+(além de óbvio é preciso ter o Angular 18 instalado na máquina)
 
-## Build
+## Como subir para o GitHub Pages?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Essa parte é mais pra mim, mas caso tenha gostado do Portfolio e queira fazer e subir no GH Pages também, basta seguir o tutorial.
 
-## Running unit tests
+Aqui é quando for fazer a primeira vez.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. ng add angular-cli-ghpages
+2. ng build --base-href "https://<seu-profile>.github.io/<projeto-angular>/"
+3. npx angular-cli-ghpages --dir=dist/<projeto-angular>/browser
+4. Vai na sua conta do GitHub, até o repositório do projeto > settings > pages > altera a branc para "gr/pages" e /(root)
+5. npx angular-cli-ghpages --dir=dist/<projeto-angular>/browser
+6. Pronto, seu projeto está online!
 
-## Running end-to-end tests
+Aqui é quando for fazer a partir da segunda, basta buildar e subir!
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. ng build --base-href "https://diogoasenjo.github.io/portfolio/"
+2. npx angular-cli-ghpages --dir=dist/portfolio/browser

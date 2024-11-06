@@ -7,7 +7,8 @@
   cursor: pointer;
 
   &.btn-primary,
-  &.btn-secondary {
+  &.btn-secondary,
+  &.btn-third {
     padding: 10px;
     font-size: 16px;
     border: 7px;
@@ -28,6 +29,15 @@
 
     &:hover {
       background-color: var(--blue-010);
+    }
+  }
+
+  &.btn-third {
+    color: var(--white);
+    background: var(--green);
+
+    &:hover {
+      background-color: var(--green-010);
     }
   }
 }

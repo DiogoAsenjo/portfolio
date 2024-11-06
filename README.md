@@ -18,10 +18,10 @@ Essa parte é mais pra mim, mas caso tenha gostado do Portfolio e queira fazer e
 Aqui é quando for fazer a primeira vez.
 
 1. ng add angular-cli-ghpages
-2. ng build --base-href "https://<seu-profile>.github.io/<projeto-angular>/"
-3. npx angular-cli-ghpages --dir=dist/<projeto-angular>/browser
+2. ng build --base-href "https://{{seu-perfil}}.github.io/{{projeto-angular}}/"
+3. npx angular-cli-ghpages --dir=dist/{{projeto-angular}}/browser
 4. Vai na sua conta do GitHub, até o repositório do projeto > settings > pages > altera a branc para "gr/pages" e /(root)
-5. npx angular-cli-ghpages --dir=dist/<projeto-angular>/browser
+5. npx angular-cli-ghpages --dir=dist/{{projeto-angular}}/browser
 6. Pronto, seu projeto está online!
 
 Aqui é quando for fazer a partir da segunda, basta buildar e subir!

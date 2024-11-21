@@ -20,6 +20,10 @@ export class KnowledgeComponent {
       alt: 'Spring',
     },
     {
+      src: 'assets/icons/knowledge/docker.svg',
+      alt: 'Docker',
+    },
+    {
       src: 'assets/icons/knowledge/node.svg',
       alt: 'Node.js',
     },

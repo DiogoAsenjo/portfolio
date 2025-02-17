@@ -14,6 +14,25 @@ export class ProjectComponent {
   readonly dialog = inject(MatDialog);
   public arrayProject = signal<IProject[]>([
     {
+      imgSrc: 'assets/projects/auth.svg',
+      alt: 'Logo Canoa Caiçara',
+      title: 'Spring Auth Module',
+      width: '100px',
+      height: '100px',
+      description: ` 
+        <p>Projeto desenvolvido para criar um módulo de login pronto em Java, utilizando as melhores práticas de segurança e autenticação. Ideal para ser reutilizado em novos projetos, garantindo que o sistema de login esteja sempre pronto para uso desde o início.</p>
+      `,
+      technologies: `
+          <p>Java, Spring Boot, Clean Architecture, JPA, OAuth/JWT e Docker</p>
+      `,
+      links: [
+        {
+          name: 'Repo',
+          href: 'https://github.com/DiogoAsenjo/spring-auth-module',
+        },
+      ],
+    },
+    {
       imgSrc: 'assets/projects/canoa.svg',
       alt: 'Logo Canoa Caiçara',
       title: 'Controle de treinos',

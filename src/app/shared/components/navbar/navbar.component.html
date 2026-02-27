@@ -1,0 +1,75 @@
+<nav class="navbar" [class.scrolled]="isScrolled()">
+  <div class="navbar-inner">
+
+    <!-- Logo -->
+    <a routerLink="/" class="navbar-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-name">DA</span>
+      <span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <ul class="nav-links" [class.open]="menuOpen()">
+      <li>
+        <a routerLink="/" routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: true }"
+           (click)="closeMenu()">{{ langService.t().nav.home }}</a>
+      </li>
+      <li>
+        <a routerLink="/career" routerLinkActive="active"
+           (click)="closeMenu()">{{ langService.t().nav.career }}</a>
+      </li>
+      <li>
+        <a routerLink="/projects" routerLinkActive="active"
+           (click)="closeMenu()">{{ langService.t().nav.projects }}</a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active"
+           (click)="closeMenu()">{{ langService.t().nav.contact }}</a>
+      </li>
+    </ul>
+
+    <!-- Actions: language toggle + theme toggle + hamburger -->
+    <div class="navbar-actions">
+
+      <!-- Language Toggle -->
+      <button
+        class="lang-toggle"
+        (click)="toggleLang()"
+        [attr.aria-label]="langService.lang() === 'en' ? 'Mudar para Português' : 'Switch to English'">
+        {{ langService.lang() === 'en' ? 'PT' : 'EN' }}
+      </button>
+
+      <!-- Theme Toggle -->
+      <button
+        class="theme-toggle"
+        (click)="toggleTheme()"
+        [attr.aria-label]="themeService.isDark() ? 'Switch to light mode' : 'Switch to dark mode'">
+        @if (themeService.isDark()) {
+          <!-- Sun icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+        } @else {
+          <!-- Moon icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        }
+      </button>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+        <span [class.open]="menuOpen()"></span>
+        <span [class.open]="menuOpen()"></span>
+        <span [class.open]="menuOpen()"></span>
+      </button>
+
+    </div>
+  </div>
+</nav>

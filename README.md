@@ -1,30 +1,59 @@
 # Portfolio
 
-Projeto desenvolvido utilizando Angular 18.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.20.
 
-Criei esse portfolio com o objetivo de aprimorar meus conhecimentos em front-end ao mesmo tempo que tinha uma página minha com meus projetos, conquistas, etc.
+## Development server
 
-O projeto pode ser acessado através do link: https://diogoasenjo.github.io/portfolio/
+To start a local development server, run:
 
-## Como rodar localmente?
+```bash
+ng serve
+```
 
-Basta clonar o projeto, instalar todas as depedências com "npm i". Feito isso, basta dar o comando "ng serve" que o projeto irá rodar localmente em: http://localhost:4200/
-(além de óbvio é preciso ter o Angular 18 instalado na máquina)
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Como subir para o GitHub Pages?
+## Code scaffolding
 
-Essa parte é mais pra mim, mas caso tenha gostado do Portfolio e queira fazer e subir no GH Pages também, basta seguir o tutorial.
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-Aqui é quando for fazer a primeira vez.
+```bash
+ng generate component component-name
+```
 
-1. ng add angular-cli-ghpages
-2. ng build --base-href "https://{{seu-perfil}}.github.io/{{projeto-angular}}/"
-3. npx angular-cli-ghpages --dir=dist/{{projeto-angular}}/browser
-4. Vai na sua conta do GitHub, até o repositório do projeto > settings > pages > altera a branc para "gr/pages" e /(root)
-5. npx angular-cli-ghpages --dir=dist/{{projeto-angular}}/browser
-6. Pronto, seu projeto está online!
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-Aqui é quando for fazer a partir da segunda, basta buildar e subir!
+```bash
+ng generate --help
+```
 
-1. ng build --base-href "https://diogoasenjo.github.io/portfolio/"
-2. npx angular-cli-ghpages --dir=dist/portfolio/browser
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

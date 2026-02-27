@@ -1,0 +1,37 @@
+<section class="projects-section">
+  <div class="container-main">
+
+    <div class="page-header reveal" #reveal>
+      <h1 class="page-title">{{ langService.t().projects.title }}</h1>
+      <p class="page-subtitle">{{ langService.t().projects.subtitle }}</p>
+    </div>
+
+    <div class="projects-grid">
+      @for (project of projects(); track project.name; let i = $index) {
+        <div class="project-card reveal" [class]="'delay-' + ((i % 3 + 1) * 100)"
+             [class.featured]="project.featured" #reveal>
+
+          @if (project.featured) {
+            <span class="featured-badge">{{ langService.t().projects.featured }}</span>
+          }
+
+          <div class="project-body">
+            <h3 class="project-name">{{ project.name }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+          </div>
+
+          <div class="project-footer">
+            <div class="project-tags">
+              @for (tag of project.tags; track tag) {
+                <span class="tag">{{ tag }}</span>
+              }
+            </div>
+
+          </div>
+
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

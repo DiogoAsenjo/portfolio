@@ -1,26 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Diogo Asenjo - Portfolio</title>
-    <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:image" content="/assets/imgs/thumbnail.png" />
-    <meta
-      name="description"
-      content="Para saber mais sobre mim e o meu trabalho, acesse esse link rsrs"
-    />
-    <link rel="icon" type="image/x-icon" href="dev.svg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="mat-typography">
-    <app-root></app-root>
-  </body>
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <title>Diogo Asenjo — Software Engineer · Backend & Cloud</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Diogo Asenjo is a Software Engineer specialised in Backend, Cloud, and Automation. Building systems that scale.">
+  <meta property="og:title" content="Diogo Asenjo — Software Engineer">
+  <meta property="og:description" content="Software Engineer · Backend & Cloud. Building backend systems, cloud-native APIs, and integrations that scale reliably.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="favicon.svg">
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function() {
+      const stored = localStorage.getItem('portfolio-theme');
+      const isDark = stored ? stored === 'dark' : true;
+      if (!isDark) document.documentElement.classList.remove('dark');
+    })();
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
 </html>

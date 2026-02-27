@@ -1,0 +1,40 @@
+<section class="career-section">
+  <div class="container-main">
+
+    <div class="page-header reveal" #reveal>
+      <h1 class="page-title">{{ langService.t().career.title }}</h1>
+      <p class="page-subtitle">{{ langService.t().career.subtitle }}</p>
+    </div>
+
+    <div class="timeline">
+      @for (item of career(); track item.company; let i = $index) {
+        <div class="timeline-item reveal" [class]="'delay-' + ((i + 1) * 100)" #reveal>
+
+          <div class="timeline-dot" [class.current]="item.current"></div>
+
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">{{ item.role }}</h3>
+                <p class="timeline-company">{{ item.company }}</p>
+              </div>
+              <span class="timeline-period" [class.current-badge]="item.current">
+                {{ item.period }}
+              </span>
+            </div>
+
+            <p class="timeline-description">{{ item.description }}</p>
+
+            <div class="timeline-tags">
+              @for (tag of item.tags; track tag) {
+                <span class="tag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

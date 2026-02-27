@@ -1,0 +1,153 @@
+.contact-section {
+  padding-top: calc(64px + 3rem);
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+  max-width: 540px;
+}
+
+.page-title {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+  color: var(--color-text-primary);
+}
+
+.page-subtitle {
+  color: var(--color-text-secondary);
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+// Contact Cards
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 250ms ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--color-accent);
+    transform: scaleY(0);
+    transition: transform 250ms ease;
+  }
+
+  &:hover {
+    border-color: var(--color-accent);
+    transform: translateX(4px);
+    box-shadow: 0 4px 20px var(--color-accent-glow);
+
+    &::before {
+      transform: scaleY(1);
+    }
+
+    .contact-arrow {
+      color: var(--color-accent);
+      transform: translateX(4px);
+    }
+  }
+}
+
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-accent);
+}
+
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.contact-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.contact-description {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.contact-arrow {
+  color: var(--color-text-muted);
+  transition: all 250ms ease;
+  flex-shrink: 0;
+}
+
+// Footer note
+.contact-footer {
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+
+  p {
+    margin: 0;
+  }
+}
+
+.email-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// CV Download card modifier
+.contact-card--cv {
+  background: var(--color-accent-glow);
+  border-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-border));
+
+  .contact-icon {
+    background: color-mix(in srgb, var(--color-accent) 15%, var(--color-surface-alt));
+    border-color: color-mix(in srgb, var(--color-accent) 25%, var(--color-border));
+  }
+}

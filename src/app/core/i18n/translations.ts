@@ -1,0 +1,228 @@
+export const translations = {
+  en: {
+    nav: {
+      home: 'Home',
+      career: 'Career',
+      projects: 'Projects',
+      contact: 'Contact',
+    },
+    career_items: [
+      {
+        company: 'Mosten',
+        role: 'Software Engineer',
+        period: 'Jul 2023 — Present',
+        description: 'I work on the architecture and continuous improvement of critical automations and integrations for the company\'s operations. My focus is turning manual, error-prone processes into reliable, observable systems — ensuring stability, traceability, and resilience at scale. I own the full delivery cycle: from scoping with business stakeholders to production deployment and ongoing support.',
+        tags: ['Python', 'Java', 'Node.js', 'AWS', 'PostgreSQL', 'DynamoDB', 'Docker'],
+        current: true,
+      },
+      {
+        company: 'Creath Digital',
+        role: 'Apprentice / Volunteer',
+        period: 'Feb 2023 — Sep 2024',
+        description: 'Contributed to the design and conception of digital products, helping shape features and user experience decisions. Supported requirement validation through manual testing, ensuring deliveries matched client expectations.',
+        tags: ['Manual Testing', 'UX', 'Product'],
+        current: false,
+      },
+      {
+        company: 'Defensoria Pública',
+        role: 'Legal Advisor',
+        period: 'Jul 2019 — Jul 2023',
+        description: 'Professional experience that built foundations I now apply daily in software engineering — deadline management, clear communication, working under pressure, and structured problem-solving in high-stakes environments.',
+        tags: ['Leadership', 'Communication', 'Problem Solving'],
+        current: false,
+      },
+    ],
+    project_items: [
+      // ─── Add new projects below — one object per entry ───────────────────────
+      {
+        name: 'Indirect Purchasing Process (Lecom)',
+        description: 'End-to-end development of the company\'s indirect purchasing workflow on the Lecom BPM platform, replacing a process that previously ran entirely over email. The flow handles multi-level approvals, ERP and database integrations for payment posting, and validation jobs for settlement tracking. Running for over 2 years, it has processed more than 50,000 payments with zero critical failures. Its success drove expansion of the platform to 10+ processes across multiple business areas, replacing legacy ERPs and centralising operations.',
+        tags: ['Lecom', 'Java', 'PostgreSQL', 'Python', 'Node-RED', 'BPMN'],
+        featured: true,
+      },
+      {
+        name: 'Serasa Debt Registration & Protest Automation',
+        description: 'Designed and implemented an async integration with the Serasa API to automate the debt registration process, replacing a decentralised manual workflow where each analyst logged into Serasa individually. Built a persistent queue in PostgreSQL with state machine control and periodic polling to guarantee consistency and prevent record loss. The solution significantly boosted operational capacity, surpassing R$70 million registered in the first six months. Following its success, the same architecture was extended to cover bill protest automation.',
+        tags: ['Node-RED', 'PostgreSQL', 'Queuing / Messaging', 'AWS', 'Docker'],
+        featured: true,
+      },
+      {
+        name: 'NFe/CTe Monitoring System',
+        description: 'What started as a semi-assisted Power Automate automation evolved into a structured Python and Node-RED solution. Monthly it ingests and ETL-processes spreadsheets from SharePoint, persists the data to a database, and queries invoice statuses directly via API. The system enables proactive fiscal risk monitoring before critical deadlines — preventing fines that had previously exceeded one million reais.',
+        tags: ['Python', 'Node-RED', 'SQL Server', 'Power Automate'],
+        featured: true,
+      },
+      {
+        name: 'Automation Observability Service',
+        description: 'Architected and built an observability service using AWS Lambda and Python to monitor the daily execution of our automations. A scheduled job cross-checks which automations should have run in the last 24 hours and delivers a formatted report to Teams every morning and afternoon — allowing the team to catch and address failures proactively, before any business area notices.',
+        tags: ['Python', 'AWS Lambda', 'Power Automate', 'Teams', 'CloudWatch'],
+        featured: true,
+      },
+      {
+        name: 'AWS Lambda Microservices',
+        description: 'Implementation of multiple AWS Lambda functions as independent microservices integrated with S3, SQS, SNS, CloudWatch, SSM, and RDS. Scope ranged from lightweight data query and transformation APIs to more complex services handling async multi-integration flows and concurrency challenges.',
+        tags: ['Python', 'TypeScript', 'AWS Lambda', 'SQS', 'SNS', 'S3', 'RDS', 'SSM'],
+        featured: false,
+      },
+      {
+        name: 'Node-RED Integration Hub',
+        description: 'Built a central integration hub in Node-RED that acts as the orchestration backbone for master data distribution across the company\'s systems (Senior, SAP, Oracle, Lecom, MUB, and others). Any entity registered in the master system is automatically replicated to all downstream platforms via API calls and direct database queries, eliminating inconsistencies across the estate.',
+        tags: ['Node-RED', 'PostgreSQL'],
+        featured: false,
+      },
+      {
+        name: 'Power Automate Automations',
+        description: 'Developed various Power Automate flows covering spreadsheet processing from SharePoint, Teams and email integrations, API calls, screen-based RPAs, and more.',
+        tags: ['Power Automate', 'RPA', 'SharePoint', 'Teams'],
+        featured: false,
+      },
+      {
+        name: 'Desktop Python Automations',
+        description: 'Built Python scripts packaged as standalone .exe files, enabling non-technical staff to run complex automations locally with no environment setup required. Each tool eliminated repetitive manual tasks from the business teams\' day-to-day.',
+        tags: ['Python', 'Pandas', 'PyInstaller'],
+        featured: false,
+      },
+    ],
+    home: {
+      greeting: "Hi, I'm",
+      role: 'Software Engineer - Backend & Cloud',
+      bio: 'I build reliable, scalable systems, automations, and integrations — so people can focus on what actually matters: the business. I enjoy owning the full journey, from understanding the problem to shipping to production, turning complex processes into simple, maintainable solutions.',
+      cta_projects: 'View Projects',
+      cta_contact: 'Get in touch',
+      tech_label: 'Tech I work with',
+    },
+    career: {
+      title: 'Career',
+      subtitle: 'From legal advisory to cloud software engineering — my professional journey.',
+    },
+    projects: {
+      title: 'Projects',
+      subtitle: 'Impactful systems and automations I designed and delivered at work.',
+      featured: '⭐ Featured',
+    },
+    contact: {
+      title: 'Get in Touch',
+      subtitle: "I'm always open to interesting conversations, opportunities, or just a friendly chat. Feel free to reach out through any of the channels below.",
+      github_description: 'Check out my personal projects',
+      linkedin_description: 'Connect with me professionally',
+      email_description: 'Best for formal inquiries and opportunities',
+      cv_label: 'RÉSUMÉ',
+      cv_value: 'Download CV',
+      cv_description: 'PDF — Updated Feb 2026',
+    },
+  },
+  pt: {
+    nav: {
+      home: 'Início',
+      career: 'Carreira',
+      projects: 'Projetos',
+      contact: 'Contato',
+    },
+    career_items: [
+      {
+        company: 'Mosten',
+        role: 'Engenheiro de Software',
+        period: 'Jul 2023 — Presente',
+        description: 'Atuo na arquitetura e evolução de automações e integrações críticas para a operação da empresa. Sou responsável por transformar processos manuais em sistemas confiáveis, garantindo estabilidade, rastreabilidade e monitoramento contínuo. Trabalho de ponta a ponta — do entendimento com as áreas de negócio ao deploy e sustentação em produção.',
+        tags: ['Python', 'Java', 'Node.js', 'AWS', 'PostgreSQL', 'DynamoDB', 'Docker'],
+        current: true,
+      },
+      {
+        company: 'Creath Digital',
+        role: 'Aprendiz / Voluntário',
+        period: 'Fev 2023 — Set 2024',
+        description: 'Colaborei na concepção de aplicações digitais, apoiando na definição de funcionalidades e experiência do usuário. Atuei na validação de requisitos e testes manuais, garantindo alinhamento entre entregas e expectativas dos clientes.',
+        tags: ['Testes Manuais', 'UX', 'Produto'],
+        current: false,
+      },
+      {
+        company: 'Defensoria Pública',
+        role: 'Assessor Jurídico',
+        period: 'Jul 2019 — Jul 2023',
+        description: 'Experiência profissional que fortaleceu habilidades hoje aplicadas em engenharia de software, como gestão de prazos, comunicação clara, trabalho sob pressão e resolução estruturada de problemas.',
+        tags: ['Liderança', 'Comunicação', 'Resolução de Problemas'],
+        current: false,
+      },
+    ],
+    project_items: [
+      {
+        name: 'Processo de Compra de Indiretos (Lecom)',
+        description: 'Desenvolvimento end-to-end do fluxo de compra de indiretos da empresa dentro da plataforma Lecom, substituindo o processo anterior que era feito por e-mail. O processo envolvia múltiplos níveis de aprovação, integração com ERPs e banco de dados para lançamento de pagamentos e jobs para validação das baixas. Lançado há mais de 2 anos, o processo já conta com mais de 50 mil pagamentos processados sem nenhum bug ou falha crítica. O sucesso do projeto levou à expansão da plataforma que hoje conta com mais de 10 processos para diversas áreas que inclusive acabaram substituindo outros ERPs gerando economia e centralização de processos.',
+        tags: ['Lecom', 'Java', 'PostgreSQL', 'Python', 'Node-RED', 'BPMN'],
+        featured: true,
+      },
+      {
+        name: 'Automação de Negativação no Serasa e Protesto',
+        description: 'Projeto e implementação de integração assíncrona com a API do Serasa para automatizar o processo de negativação de devedores. Substituiu fluxo manual descentralizado por uma fila persistente em PostgreSQL com controle de estados e polling periódico, garantindo consistência no processamento e evitando perda de registros. A solução elevou o nível de compliance e aumentou significativamente a capacidade operacional, ultrapassando os 70 milhões de reais negativados nos primeiros 6 meses de projeto. Após o sucesso do projeto, acabamos replicando o mesmo projeto mas para o protesto de títulos.',
+        tags: ['Node-RED', 'PostgreSQL', 'Filas/Mensageria', 'AWS', 'Docker'],
+        featured: true,
+      },
+      {
+        name: 'Sistema de Monitoramento de NFe/CTe',
+        description: 'Inicialmente uma automação semi-assitida em Power Automate, evoluiu para uma solução estruturada em Python e Node-RED. Que mensalmente analisa diversas planilhas no sharepoint e após ETL dos dados persiste no banco de dados e consulta via API os status das NFe/CTe. O sistema permite monitoramento proativo e mitigação de riscos fiscais antes de vencimentos críticos, evitando multas que no passado haviam ultrapassado milhão de reais.',
+        tags: ['Python', 'Node-RED', 'SQL Sever', 'Power Automate'],
+        featured: true,
+      },
+      {
+        name: 'Observabilidade das automações',
+        description: 'Arquitetei e desenvolvi um serviço de observabilidade usando AWS Lambda e Python para rastrear a execução das nossas automações diariamente. O serviço valida quais automações deveriam ter rodado nas últimas 24h e envia um relatório formatado no Teams toda manhã e tarde, permitindo que o time atue em falhas proativamente antes mesmo que as áreas de negócio percebam.',
+        tags: ['Python', 'AWS Lambda', 'Power Automate', 'Teams', 'CloudWatch'],
+        featured: true,
+      },
+      {
+        name: 'Microserviços AWS Lambda',
+        description: 'Implementação de múltiplas funções AWS Lambda como microserviços independentes, integrados com S3, SQS, SNS, CloudWatch, SSM e RDS. Os serviços variavam desde API simples para consulta e transformação de dados, até serviços mais complexos com diversas integrações assíncronas tendo que lidar com paralelismo.',
+        tags: ['Python', 'TypeScript', 'AWS Lambda', 'SQS', 'SNS', 'S3', 'RDS', 'SSM'],
+        featured: false,
+      },
+      {
+        name: 'Hub de Integrações Node-RED',
+        description: 'Construção de um hub central de integração em Node-RED que funcionava como orquestrador da  distribuição de dados entre os sistemas da empresa (Senior, SAP, Oracle, Lecom , MUB, entre outros). Qualquer entidade cadastrada no sistema Master era automaticamente replicada para todos os sistemas downstream via chamadas de API e queries diretas no banco, eliminando inconsistências entre plataformas.',
+        tags: ['Node-RED', 'PostgreSQL'],
+        featured: false,
+      },
+      {
+        name: 'Automações Power Automate',
+        description: 'Desenvolvimento automações com Power Automate, processamento de planilhas no Sharpoint, integração com o Teams e e-mail, chamadas de API, RPAs de tela, entrou outros.',
+        tags: ['Power Automate', 'RPA', 'SharePoint', 'Teams'],
+        featured: false,
+      },
+      {
+        name: 'Automações Desktop em Python',
+        description: 'Desenvolvimento de scripts Python empacotados como executáveis .exe standalone, permitindo que equipes não técnicas executassem automações complexas localmente sem nenhuma configuração de ambiente. Cada ferramenta eliminou tarefas repetitivas e manuais das áreas de negócio.',
+        tags: ['Python', 'Pandas', 'PyInstaller'],
+        featured: false,
+      },
+    ],
+    home: {
+      greeting: 'Olá, sou',
+      role: 'Engenheiro de Software - Backend & Cloud',
+      bio: 'Construo sistemas, automações e integrações confiáveis e escaláveis, permitindo que as pessoas foquem no que realmente importa: o negócio. Gosto de atuar desde o entendimento do problema até a entrega em produção, transformando processos complexos em soluções simples e sustentáveis.',
+      cta_projects: 'Ver Projetos',
+      cta_contact: 'Entrar em contato',
+      tech_label: 'Tecnologias que uso',
+    },
+    career: {
+      title: 'Carreira',
+      subtitle: 'Da assessoria jurídica à engenharia de software em cloud — minha trajetória profissional.',
+    },
+    projects: {
+      title: 'Projetos',
+      subtitle: 'Sistemas e automações de impacto que projetei e entreguei no trabalho.',
+      featured: '⭐ Destaque',
+    },
+    contact: {
+      title: 'Entre em Contato',
+      subtitle: 'Estou sempre aberto a conversas interessantes, oportunidades ou apenas um bate-papo. Fique à vontade para entrar em contato pelos canais abaixo.',
+      github_description: 'Veja meus projetos pessoais',
+      linkedin_description: 'Conecte-se comigo profissionalmente',
+      email_description: 'Melhor para consultas formais e oportunidades',
+      cv_label: 'CURRÍCULO',
+      cv_value: 'Baixar CV',
+      cv_description: 'PDF — Atualizado Fev 2026',
+    },
+  },
+} as const;
+
+export type Language = keyof typeof translations;
+export type Translations = typeof translations;
